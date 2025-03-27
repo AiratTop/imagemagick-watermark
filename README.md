@@ -1,31 +1,32 @@
-# airat-imagemagick
-Скрипт для быстрого массового сжатия и наложения водяных знаков на изображения от Айрата Халитова
+# airat-imagemagick  
 
-## Установка и запуск:
+A script for fast batch compression and watermarking of images by Airat Halitov.
+
+## Installation and Usage:  
 ```bash
-git clone https://github.com/AiratHalitov/airat-imagemagick
+git clone https://github.com/AiratTop/airat-imagemagick
 
 cd airat-imagemagick
 
 ./airat-imagemagick.sh
 ```
 
-### Примечания:
-- Скрипт работает с папкой `images`, исходные изображения нужно копировать в эту папку
-- Перед запуском скрипта нужно установить пакет [imagemagick](https://imagemagick.org/index.php) (команда: `sudo apt install imagemagick`)
-- Читай комментарии [скрипта](https://github.com/AiratHalitov/airat-imagemagick/blob/main/airat-imagemagick.sh) - там всё подробно описано (можно редактировать параметры)
-- Небольшая шпаргалка с объяснениями махинаций с файлами находится [тут](http://www.uamedwed.com/blog/linux/imagemagick-ili-kak-szhimat-izobrazheniya-v-os-linux.html)
-- Водяной знак подготовить заранее и положить в корень папки. Имя файла водяного знака должно быть `water.png` или прописать в переменную `WATER`
-- В папке `images` лежит изображение `example.jpg` для демонстрации работы скрипта (файл можно удалить)
-- Файл `water.xcf` редактируется в программе [GIMP](https://www.gimp.org/) и нужен для создания файла `water.png`
+### Notes:  
+- The script works with the `images` folder; copy your source images into this folder.  
+- Before running the script, install the [ImageMagick](https://imagemagick.org/index.php) package (command: `sudo apt install imagemagick`).  
+- Check the [script's comments](https://github.com/AiratTop/airat-imagemagick/blob/main/airat-imagemagick.sh) for detailed instructions (you can edit parameters as needed).  
+- A quick reference guide for image file operations is available [here](http://www.uamedwed.com/blog/linux/imagemagick-ili-kak-szhimat-izobrazheniya-v-os-linux.html).  
+- Prepare your watermark in advance and place it in the root folder. The watermark file must be named `water.png`, or you can specify it in the `WATER` variable.  
+- An example image, `example.jpg`, is provided in the `images` folder for demonstration purposes (this file can be deleted).  
+- The `water.xcf` file can be edited using [GIMP](https://www.gimp.org/) and is used to create the `water.png` file.  
 
-### Переменные:
-- `QUALITY=85` - изменение качества изображения в процентах
-- `SIZE=1024` - изменение размера с сохранением пропорций (размер по ширине в пикселях)
-- `WATER=water.png` - имя файла водяного знака (без пробелов)
-- `SOURCE=images` - имя папки с исходными изображениями
+### Variables:  
+- `QUALITY=85` - Changes the image quality (percentage).  
+- `SIZE=1024` - Resizes images while maintaining aspect ratio (width in pixels).  
+- `WATER=water.png` - Specifies the watermark file name (no spaces).  
+- `SOURCE=images` - Specifies the source images folder.  
 
-### Папки:
-- `images` - папка для исходных изображений (папку нельзя удалять, настраивается через переменную `SOURCE`)
-- `result-small` - папка с уменьшенными изображениями (создается автоматически, можно удалять)
-- `result-water` - итоговая папка уменьшенных изображений с водяными знаками (создается автоматически, можно удалять)
+### Folders:  
+- `images` - The folder for source images (this folder must not be deleted and is configured via the `SOURCE` variable).  
+- `result-small` - The folder for compressed images (created automatically; can be deleted).  
+- `result-water` - The final folder containing compressed images with watermarks (created automatically; can be deleted).  
