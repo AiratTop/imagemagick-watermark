@@ -1,48 +1,48 @@
 #!/bin/bash
 
 # Author: Airat Halitov
-# GitHub: https://github.com/AiratHalitov/airat-imagemagick
+# GitHub: https://github.com/AiratTop/airat-imagemagick
 # License: GPLv3
 
-# Скрипт уменьшает размер фотографий из папки source и накладывает водяной знак.
-# Имена файлов сохранятся.
+# This script compresses and resizes photos from the source folder and applies a watermark.
+# File names are preserved.
 
-# Изменение качества в процентах:
+# Compression quality in percentage:
 QUALITY=85
-# Изменение размера с сохранением пропорций (размер по ширине в пикселях):
+# Resize dimensions while maintaining the aspect ratio (width in pixels):
 SIZE=1024
-# Имя файла водяного знака (без пробелов):
+# Watermark file name (no spaces):
 WATER=water.png
-# Имя папки с исходными изображениями
+# Source folder containing the original images:
 SOURCE=images
 
-# Создаем папки для результатов
-mkdir result-small -p
-mkdir result-water -p
+# Create folders for results
+mkdir -p result-small
+mkdir -p result-water
 
-# Уменьшаем размер и качество изображений и сохраняем в папку result-small
-# Имена файлов и пропорции сохранятся.
-if [ -d $SOURCE ]; then
-    cd $SOURCE
+# Compress and resize images, then save them to the result-small folder
+# File names and aspect ratios are preserved.
+if [ -d "$SOURCE" ]; then
+    cd "$SOURCE" || exit
     for f in *.*; do
-        convert "$f" -resize $SIZE -quality $QUALITY ../result-small/"$f"
+        convert "$f" -resize "$SIZE" -quality "$QUALITY" ../result-small/"$f"
     done
     cd ..
 else
-    echo "There is no $SOURCE folder with source images!"
+    echo "The folder '$SOURCE' with source images does not exist!"
     exit 1
 fi
 
-# Накладываем водяной знак на фотки и сохраняем в папку result-water
-# Водяной знак подготовить заранее и положить в корень папки
-# Имя файла водяного знака должно быть water.png
+# Apply the watermark to the images and save them to the result-water folder
+# Prepare the watermark in advance and place it in the root folder.
+# The watermark file must be named water.png, or its name should be set in the WATER variable.
 if [ -f "$WATER" ]; then
-    cd result-small
+    cd result-small || exit
     for f in *.*; do
         composite -gravity center ../"$WATER" "$f" ../result-water/"$f"
     done
     echo "Done!"
 else
-    echo "There is no $WATER file!"
+    echo "The watermark file '$WATER' does not exist!"
     exit 2
 fi
