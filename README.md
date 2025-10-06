@@ -1,20 +1,20 @@
-# airat-imagemagick  
+# imagemagick-watermark  
 
 A script for fast batch compression and watermarking of images by Airat Halitov.
 
 ## Installation and Usage:  
 ```bash
-git clone https://github.com/AiratTop/airat-imagemagick
+git clone https://github.com/AiratTop/imagemagick-watermark
 
-cd airat-imagemagick
+cd imagemagick-watermark
 
-./airat-imagemagick.sh
+./imagemagick-watermark.sh
 ```
 
 ### Notes:  
 - The script works with the `images` folder; copy your source images into this folder.  
 - Before running the script, install the [ImageMagick](https://imagemagick.org/index.php) package (command: `sudo apt install imagemagick`).  
-- Check the [script's comments](https://github.com/AiratTop/airat-imagemagick/blob/main/airat-imagemagick.sh) for detailed instructions (you can edit parameters as needed).  
+- Check the [script's comments](https://github.com/AiratTop/imagemagick-watermark/blob/main/imagemagick-watermark.sh) for detailed instructions (you can edit parameters as needed).  
 - A quick reference guide for image file operations is available [here](http://www.uamedwed.com/blog/linux/imagemagick-ili-kak-szhimat-izobrazheniya-v-os-linux.html).  
 - Prepare your watermark in advance and place it in the root folder. The watermark file must be named `water.png`, or you can specify it in the `WATER` variable.  
 - An example image, `example.jpg`, is provided in the `images` folder for demonstration purposes (this file can be deleted).  
