@@ -1,4 +1,6 @@
-# imagemagick-watermark  
+# imagemagick-watermark
+
+![imagemagick-watermark](https://repository-images.githubusercontent.com/323574175/f8fee100-445e-11eb-90d5-1f333250d808)
 
 A script for fast batch compression and watermarking of images by Airat Halitov.
 
