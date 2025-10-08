@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Author: Airat Halitov
+# Author: Airat Halitov @AiratTop
 # GitHub: https://github.com/AiratTop/imagemagick-watermark
-# License: GPLv3
+# License: MIT
 
 # This script compresses and resizes photos from the source folder and applies a watermark.
 # File names are preserved.
