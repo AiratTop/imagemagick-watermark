@@ -30,3 +30,17 @@ cd imagemagick-watermark
 - `images` - The folder for source images (this folder must not be deleted and is configured via the `SOURCE` variable).  
 - `result-small` - The folder for compressed images (created automatically; can be deleted).  
 - `result-water` - The final folder containing compressed images with watermarks (created automatically; can be deleted).  
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Author
+
+**Airat Halitov**
+
+- Website: [airat.top](https://airat.top)
+- GitHub: [@AiratTop](https://github.com/AiratTop)
+- Repository: [imagemagick-watermark](https://github.com/AiratTop/imagemagick-watermark)
