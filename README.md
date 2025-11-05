@@ -2,7 +2,7 @@
 
 ![imagemagick-watermark](https://repository-images.githubusercontent.com/323574175/f8fee100-445e-11eb-90d5-1f333250d808)
 
-A script for fast batch compression and watermarking of images by Airat Halitov.
+A script for fast batch compression and watermarking of images by AiratTop.
 
 ## Installation and Usage:  
 ```bash
@@ -41,7 +41,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-**Airat Halitov**
+**AiratTop**
 
 - Website: [airat.top](https://airat.top)
 - GitHub: [@AiratTop](https://github.com/AiratTop)
