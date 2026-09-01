@@ -35,14 +35,20 @@ cd imagemagick-watermark
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The original shell script and technical documentation in this repository are licensed under the
+[Apache License 2.0](LICENSE), with copyright details in [NOTICE](NOTICE).
+
+ImageMagick, GIMP, and other external tools used with this project remain subject to their
+respective licenses and terms. Example images, watermark files, and other media assets are not
+licensed under Apache-2.0 unless explicitly stated.
 
 ---
 
 ## Author
 
-**AiratTop**
+**AiratTop (Airat Halitov)**
 
 - Website: [airat.top](https://airat.top)
 - GitHub: [@AiratTop](https://github.com/AiratTop)
+- Email: [mail@airat.top](mailto:mail@airat.top)
 - Repository: [imagemagick-watermark](https://github.com/AiratTop/imagemagick-watermark)
